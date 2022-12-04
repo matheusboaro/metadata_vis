@@ -1,5 +1,4 @@
-from data.fastrcnn import FastRCNN
-from data.yolo import Yolo
+from data.dert import Dert
 from data.vit_gpt2 import VitGpt2
 from data.VilT import VilT
 
@@ -30,10 +29,8 @@ class Analyzer:
         - None
         '''
 
-        if self.object_detection_model == 'Fast-RCNN':
-            model = FastRCNN()
-        if self.object_detection_model =='Yolo':
-            model = Yolo()
+        if self.object_detection_model == 'Dert':
+            model = Dert()
         else:
             return []
         self.results['object_detection'] = model.predict(self.image_path)

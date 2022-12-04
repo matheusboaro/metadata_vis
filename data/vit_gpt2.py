@@ -3,7 +3,6 @@ import torch
 from torchvision import transforms
 from model.deeplearning_models.image_captioning_model import ImageCaptioningModel
 from transformers import VisionEncoderDecoderModel, ViTFeatureExtractor, AutoTokenizer
-from transformers.models.ofa.generate import sequence_generator
 
 class VitGpt2(ImageCaptioningModel):
     '''

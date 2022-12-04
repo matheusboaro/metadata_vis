@@ -30,7 +30,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
 
     def set_object_detection_model(self):
-        model_names = ['None','Fast-RCNN','Yolo']
+        model_names = ['None','Dert']
         self.object_detection_combo.addItems(model_names)
 
     def set_image_captioning_model(self):
